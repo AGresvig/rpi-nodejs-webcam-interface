@@ -10,7 +10,8 @@
   "author": "Aksel Gresvig <aksel@qlimt.com> (http://blog.akselgresvig.com/)",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.10.6"
+    "express": "^4.10.6",
+    "raspicam": "^0.2.13"
   },
   "devDependencies": {
     "nodemon": "^1.2.1"

@@ -1,8 +1,20 @@
 var express = require('express')
 var app = express()
 
+var config = require('./config.js');
+var RaspiCam = require("raspicam");
+
+var camera = new RaspiCam(config.cameraOpts);
+
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  //listen for the "read" event triggered when each new photo/video is saved
+  camera.on("read", function(err, timestamp, filename){
+    if (err) {
+      res.json(500, err);
+    }
+    res.send("image available at: /"+filename);
+  });
+  camera.start();
 })
 
 var server = app.listen(3000, function () {
