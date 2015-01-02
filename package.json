@@ -1,0 +1,15 @@
+{
+  "name": "rpi-nodejs-webcam-interface",
+  "version": "1.0.0",
+  "description": "Simple webcam interface for Raspberry Pi with Camera module, based on NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aksel Gresvig <aksel@qlimt.com> (http://blog.akselgresvig.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.6"
+  }
+}
