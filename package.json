@@ -4,12 +4,15 @@
   "description": "Simple webcam interface for Raspberry Pi with Camera module, based on NodeJS",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aksel Gresvig <aksel@qlimt.com> (http://blog.akselgresvig.com/)",
   "license": "ISC",
   "dependencies": {
     "express": "^4.10.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.1"
   }
 }
