@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  #slides
+    .slides-container
+      each file in files.length ? files : ['There are no slides']
+        img(src='/images/'+file)
+
+    .slides-navigation
+      a.next(href='#') Next
+      a.prev(href='#') Previous

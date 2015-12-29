@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    title= title
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/vendor/fixed-nav.css')
+  body
+    header
+      a.logo(href='/') Now
+      nav.nav-collapse
+        ul
+          li.menu-item
+            a(href='/timelapse/24-hours') Last 24 hours
+          li.menu-item
+            a(href='/timelapse/7-days') Last 7 days
+          li.menu-item
+            a(href='/timelapse/30-days') Last 30 days
+
+    block content
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/hammer.js/1.1.3/hammer.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js')
+    script(src='/vendor/jquery.superslides.min.js')
+    script(src='/vendor/responsive-nav.js')
+    //script(src='/vendor/fixed-responsive-nav.js')
+    script(src='/js/main.js')
