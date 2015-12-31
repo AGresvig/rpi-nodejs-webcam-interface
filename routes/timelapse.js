@@ -6,7 +6,7 @@ router.get('/:timespan', function(req, res, next) {
   res.render('videoplayer',
     {
       title: 'Timelapse - ' + req.params.timespan,
-      filename: req.params.timespan + '.mp4',
+      videoname: req.params.timespan + '.mp4',
     });
 });
 
