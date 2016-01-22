@@ -64,7 +64,6 @@ avconv -v 'warning' -y \
   -r 5 \
   -i 'temp/img_%06d.jpg' \
   -r 24 \
-  -preset slower -crf 27 \
   $outputFile
 end=`date +%s`
 
