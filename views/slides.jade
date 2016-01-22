@@ -3,8 +3,8 @@ extends layout
 block content
   #slides
     .slides-container
-      each file in files.length ? files : ['There are no slides']
-        img(src='/images/'+file)
+      each filename in files.length ? files : ['There are no slides']
+        img(src=rootPath+filename)
 
     .slides-navigation
       a.next(href='#') Next

@@ -7,14 +7,14 @@ var fs = require('fs');
 router.get('/', function(req, res, next) {
   var snapsdir = 'public/images/outdoor';
   var snapshots = fs.readdirSync(snapsdir);
-  res.render('slides', { title: 'Today Live Outdoor', files: snapshots });
+  res.render('slides', { title: 'Today Live Outdoor', rootPath: '/images/outdoor', files: snapshots });
 });
 
 /* GET page with indoor pics. */
 router.get('/indoor', function(req, res, next) {
   var snapsdir = 'public/images/indoor';
   var snapshots = fs.readdirSync(snapsdir);
-  res.render('slides', { title: 'Today Live Indoor', files: snapshots });
+  res.render('slides', { title: 'Today Live Indoor', rootPath: '/images/indoor', files: snapshots });
 });
 
 /* GET timelapse page. */
